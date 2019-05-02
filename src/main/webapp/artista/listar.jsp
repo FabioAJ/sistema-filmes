@@ -24,6 +24,23 @@
 		<div class="page-header">
 			<h1>Artistas</h1>
 		</div>
+		
+		<div class="row">
+			<div class="col-sm-2">
+				<form class="navbar-form" action="<%=request.getContextPath()%>/artista/novo">
+					<button type="submit" class="btn btn-primary">Inserir novo</button>
+				</form>
+			</div>
+			<div class="col-sm-6">
+				<form class="navbar-form" action="<%=request.getContextPath()%>/artista/filtrar">
+					<div class="form-group">
+						<input type="text" name="busca" placeholder="Digite um nome" class="form-control"/>
+					</div>
+					<button type="submit" class="btn btn-success">Filtrar</button>
+				</form>
+			</div>
+		</div>
+		
 		<table class="table">
 			<thead>
 				<tr>
@@ -43,7 +60,7 @@
 						<td>${x.nacionalidade}</td>
 						<td>${x.cache}</td>
 						<td>${x.nascimento}</td>
-						<td>...</td>
+						<td><a href="<%=request.getContextPath()%>/artista/editar?cod=${x.codArtista}" class="btn btn-primary btn-xs">Editar</a><a href="<%=request.getContextPath()%>/artista/remover?cod=$" class="btn btn-danger btn-xs">Excluir</a></td>
 					</tr>
 				</c:forEach>
 			</tbody>
