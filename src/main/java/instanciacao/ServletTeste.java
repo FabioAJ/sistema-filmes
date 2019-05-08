@@ -1,6 +1,14 @@
+/*
+Nome do autor: Fábio Augusto Amaro Jaime
+Data de criação do arquivo: 08/05/2019
+Objetivo sucinto do programa: Implementa um servlet de testes
+Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb
+*/
+
 package instanciacao;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -11,10 +19,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dominio.Artista;
 import dominio.Filme;
+import dominio.Participacao;
 import servico.ArtistaServico;
 import servico.FilmeServico;
 import servico.ParticipacaoServico;
+import servico.ServicoException;
 
 @WebServlet("/ServletTeste")
 public class ServletTeste extends HttpServlet {
@@ -41,9 +52,8 @@ public class ServletTeste extends HttpServlet {
 			catch (ServicoException e) {
 				response.getWriter().append(e.getMessage()+"\n");
 			}
-*/			
-
-			
+		
+*/		
 /*
 			// Tentando atualizar um artista (1):
 			Artista a1 = as.buscar(1);
@@ -68,7 +78,7 @@ public class ServletTeste extends HttpServlet {
 				response.getWriter().append(e.getMessage()+"\n");
 			}
 */		
-/*			
+		
 			// Tentando inserir uma participacao nao repetida:
 			
 			Filme f1 = fs.buscar(2);
@@ -82,7 +92,7 @@ public class ServletTeste extends HttpServlet {
 				response.getWriter().append(e.getMessage());
 			}
 		
-*/
+
 /*			
 			// Tentando inserir uma participacao repetida:
 			

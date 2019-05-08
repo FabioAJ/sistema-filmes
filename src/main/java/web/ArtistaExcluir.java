@@ -1,3 +1,10 @@
+/*
+Nome do autor: Fábio Augusto Amaro Jaime
+Data de criação do arquivo: 08/05/2019
+Objetivo sucinto do programa: Realiza alteração nos dados do artista
+Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb
+*/
+
 package web;
 
 import java.io.IOException;
@@ -12,7 +19,6 @@ import javax.servlet.http.HttpServletResponse;
 import dominio.Artista;
 import servico.ArtistaServico;
 import servico.ServicoException;
-import servico.ValidacaoException;
 
 @WebServlet("/artista/excluir")
 public class ArtistaExcluir extends HttpServlet {

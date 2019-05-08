@@ -1,3 +1,10 @@
+/*
+Nome do autor: Fábio Augusto Amaro Jaime
+Data de criação do arquivo: 08/05/2019
+Objetivo sucinto do programa: Implementa instanciações
+Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb
+*/
+
 package instanciacao;
 
 import java.io.IOException;

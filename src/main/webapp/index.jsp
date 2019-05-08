@@ -1,3 +1,10 @@
+<!--
+Nome do autor: Fábio Augusto Amaro Jaime
+Data de criação do arquivo: 08/05/2019
+Objetivo sucinto do programa: Implementa pagina web principal
+Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb
+-->
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
@@ -17,10 +24,10 @@
     <!-- Begin page content -->
     <div class="container">
       <div class="page-header">
-        <h1>Página inicial</h1>
+        <h1>Filmes Brazilian</h1>
       </div>
-      <p class="lead">Sistema didatico Java para web.</p>
-      <p>Isso não é um link - <a href="https://media.giphy.com/media/jUwpNzg9IcyrK/giphy.gif">não é um link</a></p>
+      <p class="lead">Sistema de filmes para web.</p>
+      <h1>Bem vindo ao melhor site sobre filmes</h1>
     </div>
 
 	<jsp:include page="/resources/templates/rodape.jsp"></jsp:include>
